@@ -1,17 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <GridView
-        android:id="@+id/gridview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:minHeight="90dp"
-        android:numColumns="4"
-        android:stretchMode="columnWidth" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
 
+        <ImageView
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+
+            />
+
+        <ImageView
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+
+            />
+
+        <ImageView
+            android:id="@+id/six"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/seven"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/eight"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/nine"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+
+            />
+
+        <ImageView
+            android:id="@+id/ten"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/eleven"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/twelve"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/thirteen"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+
+            />
+
+        <ImageView
+            android:id="@+id/fourteen"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/fifteen"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <ImageView
+            android:id="@+id/sixteen"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Yes"/>
+
+        <ImageView
+            android:id="@+id/guesswho"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="No"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your question"/>
 
 </LinearLayout>
