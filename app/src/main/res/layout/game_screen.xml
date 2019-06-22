@@ -198,10 +198,23 @@
 
     </LinearLayout>
 
-    <EditText
-        android:paddingVertical="10dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your question"/>
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:paddingVertical="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:hint="Enter your question"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="Send"/>
+
+    </LinearLayout>
 
 </LinearLayout>

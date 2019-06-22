@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.snapchat.kit.sdk.clientId"
-            android:value="25590a5c-da91-41b6-94b3-e1b9f825d734" />
+            android:value="58fa771e-81d7-4420-b3c8-9087141a4fca" />
         <meta-data
             android:name="com.snapchat.kit.sdk.redirectUrl"
             android:value="snapguess://snap-kit/oauth2" />
