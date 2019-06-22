@@ -22,6 +22,10 @@ public class Who {
         this.isChosen = isChosen;
     }
 
+    public boolean getIsBlanked() {
+        return isBlanked;
+    }
+
     public void toggleBlanked() {
         isBlanked = !isBlanked;
     }
