@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "617687024967-886hbdggin5tg3s3p8h31g01jhc6g5u8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.snapguess",
+            "certificate_hash": "e0b049e1e9a0d1a38bc44417fbe226d61efe01c4"
+          }
+        },
+        {
           "client_id": "617687024967-7i83obqi2judk4dj9ravn5o8u9g0b3tr.apps.googleusercontent.com",
           "client_type": 3
         }

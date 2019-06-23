@@ -10,8 +10,6 @@
 //import android.widget.BaseAdapter;
 //import android.widget.TextView;
 //
-//import com.scaledrone.lib.Message;
-//
 //import java.util.ArrayList;
 //import java.util.List;
 //
@@ -50,7 +48,7 @@
 //    public View getView(int i, View convertView, ViewGroup viewGroup) {
 //        MessageViewHolder holder = new MessageViewHolder();
 //        LayoutInflater messageInflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-//        Message message = messages.get(i);
+//        Message message = (Message) messages.get(i);
 //
 //        if (message.isBelongsToCurrentUser()) {
 //            convertView = messageInflater.inflate(R.layout.my_message, null);
