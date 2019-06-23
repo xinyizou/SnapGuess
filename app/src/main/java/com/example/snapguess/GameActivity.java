@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.solacesystems.jcsmp.impl.JCSMPBasicSession;
+
+
 public class GameActivity extends AppCompatActivity {
 
     @Override
@@ -40,6 +43,4 @@ public class GameActivity extends AppCompatActivity {
         });
 
     }
-
-
 }
