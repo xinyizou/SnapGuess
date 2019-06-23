@@ -63,35 +63,35 @@ public class GameScreenActivity extends AppCompatActivity {
         url = strList.toArray(new Who[strList.size()]);
 
         // Stacey
-        final String convoA[] = {"", "A: Yes", "Q: Is the character male?", "Yes", "Is her hair black?", "Yes", "Is the character looking at the camera?", "No", "Congratulations, you win!"};
+        final String convoA[] = {"", "Yes", "Is the character male?", "Yes", "Is her hair black?", "Yes", "Is the character looking at the camera?", "No", "You lose better luck next time"};
         // Alex
-        final String convoB[] = {"", "Q: Is the character male?", "No", "Is he wearing something on his head?", "Yes", "Does the character have something covering his face?", "Yes", "Does he have a football helmet on?", "You lose better luck next time"};
+        final String convoB[] = {"", "Is the character male?", "No", "Is he wearing something on his head?", "Yes", "Does the character have something covering his face?", "Yes", "Does he have a football helmet on?", "Congratulations, you win!"};
 
         editText = (EditText) findViewById(R.id.edddit);
 
         messagesView = (TextView) findViewById(R.id.messages_view);
 
-        messagesView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                messagesView.setText(convoB[convoBIndex]);
-                convoBIndex++;
-                if (convoBIndex == convoB.length) {
-                    convoBIndex = 0;
-                }
-            }
-        });
-
 //        messagesView.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                messagesView.setText(convoA[convoAIndex]);
-//                convoAIndex++;
-//                if (convoAIndex == convoA.length) {
-//                    convoAIndex = 0;
+//                messagesView.setText(convoB[convoBIndex]);
+//                convoBIndex++;
+//                if (convoBIndex == convoB.length) {
+//                    convoBIndex = 0;
 //                }
 //            }
 //        });
+
+        messagesView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                messagesView.setText(convoA[convoAIndex]);
+                convoAIndex++;
+                if (convoAIndex == convoA.length) {
+                    convoAIndex = 0;
+                }
+            }
+        });
 
         final ImageView one=(ImageView) findViewById(R.id.one);
         Glide.with(getApplicationContext()).load(url[0].getUrl()).into(one);
@@ -128,12 +128,12 @@ public class GameScreenActivity extends AppCompatActivity {
 
 
         final ImageView chosen_one = (ImageView) findViewById(R.id.guesswho);
-//
-//        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Stacey.jpg?alt=media&token=e61059cb-7c39-44dc-bbd7-d1928877bf1c").into(chosen_one);
-//        System.out.println("gatorade" + ("Stacey"));
 
-        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Alex.jpg?alt=media&token=60b79552-51ae-4d48-8fb5-f3873f18ae83").into(chosen_one);
-        System.out.println("gatorade" + ("Alex"));
+        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Stacey.jpg?alt=media&token=e61059cb-7c39-44dc-bbd7-d1928877bf1c").into(chosen_one);
+        System.out.println("gatorade" + ("Stacey"));
+//
+//        Glide.with(getApplicationContext()).load("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Alex.jpg?alt=media&token=60b79552-51ae-4d48-8fb5-f3873f18ae83").into(chosen_one);
+//        System.out.println("gatorade" + ("Alex"));
 
         one.setOnClickListener(new View.OnClickListener() {
             @Override
