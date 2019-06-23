@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity{
                             .load(meData.getBitmojiData().getAvatar())
                             .into(mBitmojiImageView);
 
-//                    Bitmap bitImage = BitmapFactory.decodeResource(getResources(), R.id.bitmoji);
-
+                    Bitmap bitImage = BitmapFactory.decodeResource(getResources(), R.id.bitmoji);
+//                    bitImage.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
                 }
             }
 
