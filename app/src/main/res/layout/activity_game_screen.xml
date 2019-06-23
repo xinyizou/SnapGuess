@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/guesswho"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="75dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/ic_launcher_background"/>
 
@@ -171,36 +171,43 @@
             />
     </LinearLayout>
 
-    <LinearLayout
-        android:paddingTop="10dp"
+    <!--<LinearLayout-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.25"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:backgroundTint="@android:color/holo_green_dark"-->
+            <!--android:text="Yes"/>-->
+
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.25"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:backgroundTint="@android:color/holo_red_dark"-->
+            <!--android:text="No"/>-->
+
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/messages"
+        android:paddingVertical="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.25"
-            android:layout_gravity="center_vertical"
-            android:backgroundTint="@android:color/holo_green_dark"
-            android:text="Yes"/>
-
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.25"
-            android:layout_gravity="center_vertical"
-            android:backgroundTint="@android:color/holo_red_dark"
-            android:text="No"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/edddit"
             android:paddingVertical="10dp"
             android:layout_width="0dp"
             android:layout_weight="0.8"
@@ -212,13 +219,10 @@
             android:layout_width="0dp"
             android:layout_weight="0.2"
             android:layout_height="wrap_content"
-            android:text="Send"/>
+            android:text="Send"
+            android:onClick="sendMessage"/>
 
     </LinearLayout>
 
-    <TextView
-        android:paddingVertical="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>
