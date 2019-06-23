@@ -2,6 +2,8 @@ package com.example.snapguess;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,8 +12,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.protobuf.Any;
 import com.snapchat.kit.sdk.SnapLogin;
 import com.snapchat.kit.sdk.core.controller.LoginStateController;
@@ -44,10 +48,11 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(final View v) {
                 SnapLogin.getAuthTokenManager((Context)MainActivity.this).startTokenGrant();
                 fetchUserData();
-//                goToNextView();
+                goToNextView();
 
             }
         });
+
     }
 
     private void goToNextView() {
@@ -71,6 +76,17 @@ public class MainActivity extends AppCompatActivity{
                 }
                 TextView label = (TextView) findViewById(R.id.helloworld);
                 label.setText(userDataResponse.getData().getMe().getDisplayName());
+
+                ImageView mBitmojiImageView = (ImageView) findViewById(R.id.bitmoji);
+
+                if (meData.getBitmojiData() != null) {
+                    Glide.with((Context)MainActivity.this)
+                            .load(meData.getBitmojiData().getAvatar())
+                            .into(mBitmojiImageView);
+
+//                    Bitmap bitImage = BitmapFactory.decodeResource(getResources(), R.id.bitmoji);
+
+                }
             }
 
             @Override
@@ -98,22 +114,5 @@ public class MainActivity extends AppCompatActivity{
                     // Here you could update UI to reflect logged out state
                 }
             };
-
-//    private class LoginActivity implements LoginStateController.OnLoginStateChangedListener {
-//        @Override
-//        public void onLoginSucceeded() {
-//
-//        }
-//
-//        @Override
-//        public void onLoginFailed() {
-//
-//        }
-//
-//        @Override
-//        public void onLogout() {
-//
-//        }
-//    }
 
 }

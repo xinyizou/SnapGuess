@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "617687024967",
+    "firebase_url": "https://snapguess-6567a.firebaseio.com",
+    "project_id": "snapguess-6567a",
+    "storage_bucket": "snapguess-6567a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617687024967:android:0070bda04842baf1",
+        "android_client_info": {
+          "package_name": "com.example.snapguess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617687024967-7i83obqi2judk4dj9ravn5o8u9g0b3tr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqw4TVG4Ik5q13FCniovzhE9T-Dnp9eco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617687024967-7i83obqi2judk4dj9ravn5o8u9g0b3tr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
