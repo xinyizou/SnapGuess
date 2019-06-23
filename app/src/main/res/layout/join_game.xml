@@ -6,13 +6,18 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:hint="Enter room code" />
     <Button
+        android:layout_marginTop="50dp"
         android:id="@+id/play"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
         android:text="Join"/>
 
 </LinearLayout>

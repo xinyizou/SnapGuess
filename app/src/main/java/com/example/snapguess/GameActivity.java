@@ -19,9 +19,9 @@ public class GameActivity extends AppCompatActivity {
         host.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Fragment hostFragment = new HostFragment();
+                Fragment joinFragment = new JoinFragment();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.container, hostFragment);
+                transaction.replace(R.id.container, joinFragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
 
