@@ -1,11 +1,16 @@
 package com.example.snapguess;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
 public class GameScreenActivity extends AppCompatActivity {
 
@@ -14,22 +19,68 @@ public class GameScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
 
+        Who url[] = {new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Alex.jpg?alt=media&token=60b79552-51ae-4d48-8fb5-f3873f18ae83"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Alice.jpg?alt=media&token=c3172c0d-f6b7-4170-828f-0690446b7089"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Andrew.jpg?alt=media&token=06d15ceb-2f76-4bdd-b41e-5ed38176aa93"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Anna.jpg?alt=media&token=0f6bc399-92c1-4a19-8efc-7ec102221e98"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Gerry.jpg?alt=media&token=f7d34a7c-dbbe-4488-b087-4d806208f86f"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Harry.jpg?alt=media&token=cd8f9f9a-ed62-4627-95e0-a8de14a275bf"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Jeff.jpg?alt=media&token=1448b81d-5980-44f9-890e-48f9c0f2c7a0"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Jenn.jpg?alt=media&token=c8ab6119-7ef6-4e6d-9248-3b625a2d09f3"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/John.jpg?alt=media&token=b4aac627-0e21-4823-bf86-e9f8a21274b8"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Josh.jpg?alt=media&token=10859aeb-27b1-4f23-982d-544238772afd"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Julie.jpg?alt=media&token=41bc0171-904a-4985-8f39-a0b28c2362fe"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Kristie.jpg?alt=media&token=10cef14f-d963-40a0-a209-a9ed329a5665"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Mohamad.jpg?alt=media&token=1c739428-933b-48df-8b02-a0c7e3c95fa0"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Stacey.jpg?alt=media&token=e61059cb-7c39-44dc-bbd7-d1928877bf1c"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Tobe.jpg?alt=media&token=f4bc8409-fa69-4d8a-907e-81bedb110ee1"),
+                new Who("https://firebasestorage.googleapis.com/v0/b/snapguess-6567a.appspot.com/o/Umar.jpg?alt=media&token=7997c1a8-5af4-4a98-8151-692ec6565c92")
+        };
+
+        List<Who> strList = Arrays.asList(url);
+        Collections.shuffle(strList);
+        url = strList.toArray(new Who[strList.size()]);
+
         final ImageView one=(ImageView) findViewById(R.id.one);
+        Glide.with(getApplicationContext()).load(url[0].getUrl()).into(one);
         final ImageView two=(ImageView) findViewById(R.id.two);
+        Glide.with(getApplicationContext()).load(url[1].getUrl()).into(two);
         final ImageView three=(ImageView) findViewById(R.id.three);
+        Glide.with(getApplicationContext()).load(url[2].getUrl()).into(three);
         final ImageView four=(ImageView) findViewById(R.id.four);
+        Glide.with(getApplicationContext()).load(url[3].getUrl()).into(four);
         final ImageView five=(ImageView) findViewById(R.id.five);
+        Glide.with(getApplicationContext()).load(url[4].getUrl()).into(five);
         final ImageView six=(ImageView) findViewById(R.id.six);
+        Glide.with(getApplicationContext()).load(url[5].getUrl()).into(six);
         final ImageView seven=(ImageView) findViewById(R.id.seven);
+        Glide.with(getApplicationContext()).load(url[6].getUrl()).into(seven);
         final ImageView eight=(ImageView) findViewById(R.id.eight);
+        Glide.with(getApplicationContext()).load(url[7].getUrl()).into(eight);
         final ImageView nine=(ImageView) findViewById(R.id.nine);
+        Glide.with(getApplicationContext()).load(url[8].getUrl()).into(nine);
         final ImageView ten=(ImageView) findViewById(R.id.ten);
+        Glide.with(getApplicationContext()).load(url[9].getUrl()).into(ten);
         final ImageView eleven=(ImageView) findViewById(R.id.eleven);
+        Glide.with(getApplicationContext()).load(url[10].getUrl()).into(eleven);
         final ImageView twelve=(ImageView) findViewById(R.id.twelve);
+        Glide.with(getApplicationContext()).load(url[11].getUrl()).into(twelve);
         final ImageView thirteen=(ImageView) findViewById(R.id.thirteen);
+        Glide.with(getApplicationContext()).load(url[12].getUrl()).into(thirteen);
         final ImageView fourteen=(ImageView) findViewById(R.id.fourteen);
+        Glide.with(getApplicationContext()).load(url[13].getUrl()).into(fourteen);
         final ImageView fifteen=(ImageView) findViewById(R.id.fifteen);
+        Glide.with(getApplicationContext()).load(url[14].getUrl()).into(fifteen);
         final ImageView sixteen=(ImageView) findViewById(R.id.sixteen);
+        Glide.with(getApplicationContext()).load(url[15].getUrl()).into(sixteen);
+
+
+        Random randomGenerator = new Random();
+        int randomInt = randomGenerator.nextInt(15);
+
+        final ImageView chosen_one = (ImageView) findViewById(R.id.guesswho);
+        Glide.with(getApplicationContext()).load(url[randomInt].getUrl()).into(chosen_one);
+        System.out.println("gatorade" + (url[randomInt].getName()));
 
         one.setOnClickListener(new View.OnClickListener() {
             @Override

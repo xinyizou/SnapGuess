@@ -4,6 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/guesswho"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher_background"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -164,11 +171,6 @@
             />
     </LinearLayout>
 
-    <TextView
-        android:paddingVertical="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <LinearLayout
         android:paddingTop="10dp"
         android:layout_width="match_parent"
@@ -177,22 +179,18 @@
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"
             android:backgroundTint="@android:color/holo_green_dark"
             android:text="Yes"/>
 
-        <ImageView
-            android:id="@+id/guesswho"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:src="@drawable/ic_launcher_background"/>
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"
             android:backgroundTint="@android:color/holo_red_dark"
             android:text="No"/>
 
@@ -206,6 +204,7 @@
             android:paddingVertical="10dp"
             android:layout_width="0dp"
             android:layout_weight="0.8"
+            android:inputType="text"
             android:layout_height="wrap_content"
             android:hint="Enter your question"/>
 
@@ -216,5 +215,10 @@
             android:text="Send"/>
 
     </LinearLayout>
+
+    <TextView
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

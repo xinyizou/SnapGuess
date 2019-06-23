@@ -1,38 +1,54 @@
 package com.example.snapguess;
 
 public class Who {
-    private final String imageName;
-    private boolean isBlanked = false;
-    private boolean isChosen = false;
-    private final String bitmoji;
 
-    public Who(String imageName, String bitmoji) {
-        this.imageName = imageName;
-        this.bitmoji = bitmoji;
-    }
+    private final String name;
+    private final String url;
 
-    public String getImageName() {
-        return imageName;
+    public Who(String url) {
+        this.url = url;
+        this.name = url.substring(url.lastIndexOf("/") + 1, url.indexOf(".jpg"));
     }
 
-    public boolean getIsChosen() {
-        return isChosen;
-    }
-    public void setIsChosen(boolean isChosen) {
-        this.isChosen = isChosen;
+    public String getName() {
+        return name;
     }
 
-    public boolean getIsBlanked() {
-        return isBlanked;
+    public String getUrl() {
+        return url;
     }
-
-    public void toggleBlanked() {
-        isBlanked = !isBlanked;
-    }
-
-    public String getBitmoji() {
-        return bitmoji;
-    }
+    //    private final String imageName;
+//    private boolean isBlanked = false;
+//    private boolean isChosen = false;
+//    private final String bitmoji;
+//
+//    public Who(String imageName, String bitmoji) {
+//        this.imageName = imageName;
+//        this.bitmoji = bitmoji;
+//    }
+//
+//    public String getImageName() {
+//        return imageName;
+//    }
+//
+//    public boolean getIsChosen() {
+//        return isChosen;
+//    }
+//    public void setIsChosen(boolean isChosen) {
+//        this.isChosen = isChosen;
+//    }
+//
+//    public boolean getIsBlanked() {
+//        return isBlanked;
+//    }
+//
+//    public void toggleBlanked() {
+//        isBlanked = !isBlanked;
+//    }
+//
+//    public String getBitmoji() {
+//        return bitmoji;
+//    }
 }
 
 

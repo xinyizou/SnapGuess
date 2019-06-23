@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/container"
     android:orientation="vertical"
+    android:backgroundTint="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <Button
@@ -13,7 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.47"
+        android:backgroundTint="@color/colorAccent2"
+        android:textSize="30dp"
         android:text="Host a Game"
+        android:textColor="@android:color/background_light"
         />
 
     <Button
@@ -21,6 +25,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.47"
+        android:textSize="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/background_light"
         android:text="Join a Game"
         />
 
